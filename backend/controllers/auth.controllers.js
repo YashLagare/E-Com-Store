@@ -25,13 +25,13 @@ const setCookies = (res, accessToken, refreshToken) => {
   res.cookie("accessToken", accessToken, {
     httpOnly: true, // prevent xss attacks, xss->cross site scripting attack
     secure: process.env.NODE_ENV === "production",
-    sameSite: "strict", // prevents CSRF attacks, CSRF->cross-site request forgery attack
+    sameSite: "lax", // prevents CSRF attacks, CSRF->cross-site request forgery attack
     maxAge: 15 * 60 * 1000, // expires in 15minutes
   });
   res.cookie("refreshToken", refreshToken, {
     httpOnly: true, // prevent xss attacks, xss->cross site scripting attack
     secure: process.env.NODE_ENV === "production",
-    sameSite: "strict", // prevents CSRF attacks, CSRF->cross-site request forgery attack
+    sameSite: "lax", // prevents CSRF attacks, CSRF->cross-site request forgery attack
     maxAge: 7 * 24 * 60 * 60 * 1000, // expires in 7 Days
   });
 };
@@ -141,7 +141,7 @@ export const refreshToken = async (req, res) => {
         res.cookie("accessToken", accessToken, {
             httpOnly: true,
             secure: process.env.NODE_ENV === "production",
-            sameSite: "strict",
+            sameSite: "lax",
             maxAge: 15 * 60 * 1000, // 15 minutes
         });
 

@@ -66,6 +66,7 @@ export const useUserStore = create((set, get) => ({
         "Auth check failed:",
         error.response?.data?.message || error.message
       );
+      // Do not throw error, just log it
     }
   },
 
