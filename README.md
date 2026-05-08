@@ -1,5 +1,5 @@
 # ============================================================================
-# E-COMMERCE STORE - COMPREHENSIVE PROJECT DOCUMENTATION
+# E-COMMERCE STORE - PROJECT DOCUMENTATION
 # ============================================================================
 
 <img width="1900" height="913" alt="image" src="https://github.com/user-attachments/assets/a9a5a30e-ee19-4ce8-b785-9783519365f7" />
