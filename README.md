@@ -121,7 +121,7 @@ json
 
 ---
 
-# 3. FEATURES LIST (FULL)
+# 3. FEATURES LIST
 # ============================================================================
 
 ## Authentication Features
